@@ -1,7 +1,4 @@
 #include "../../std_lib_facilities.h"
-
-
-
 int main() {
 	vector<double> temps;
 	double temp = 0;
