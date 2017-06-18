@@ -12,8 +12,9 @@ int main() {
 	}
 	cout << "Srednia wynosi: " << sum / temps.size() << endl;
 	sort(temps.begin(), temps.end());
-	if (temps.size() % 2 == 0) { cout<<"Mediana wynosi: " << temps[temps.size() / 2 - 1] << "\t" << temps[temps.size() / 2] << endl; }
-	else cout << "Mediana wynosi: " << temps[temps.size() / 2] << endl;
+	if (temps.size() % 2 == 0) { cout<<"Mediana wynosi: "<<(temps[temps.size() / 2 - 1] + temps[temps.size() / 2])/2<<" z liczb " 
+		<< temps[temps.size() / 2 - 1] << " i " << temps[temps.size() / 2] << endl; }
+	else cout <<"Mediana wynosi: "<< temps[temps.size() / 2] << endl;
 	keep_window_open();
 	return 0;
 }
